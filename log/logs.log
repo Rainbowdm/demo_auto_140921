@@ -23,3 +23,34 @@
 2021-28-09 20:09:06   INFO [RegistrationTests:33  ] : browser was opened
 2021-28-09 20:09:11   INFO [  MainPage:28  ] : Page was opened http://automationpractice.com/
 2021-28-09 20:09:13   INFO [RegistrationPage:28  ] : Page was opened http://automationpractice.com/index.php?controller=authentication&back=my-account
+2021-28-09 20:29:43   INFO [RegistrationTests:32  ] : Get chromeDriver
+2021-28-09 20:29:43   INFO [RegistrationTests:35  ] : browser was opened
+2021-28-09 20:29:47   INFO [  MainPage:28  ] : Page was opened http://automationpractice.com/
+2021-28-09 20:30:26   INFO [RegistrationTests:32  ] : Get chromeDriver
+2021-28-09 20:30:26   INFO [RegistrationTests:35  ] : browser was opened
+2021-28-09 20:30:32   INFO [  MainPage:28  ] : Page was opened http://automationpractice.com/
+2021-28-09 20:30:33   INFO [Registration2Page:28  ] : Page was opened http://automationpractice.com/index.php?controller=authentication&back=my-account
+2021-28-09 21:08:56   INFO [RegistrationTests:34  ] : Get chromeDriver
+2021-28-09 21:08:56   INFO [RegistrationTests:37  ] : browser was opened
+2021-28-09 21:09:09   INFO [  MainPage:31  ] : Page was opened http://automationpractice.com/
+2021-28-09 21:09:14   INFO [RegistrationPage:31  ] : Page was opened http://automationpractice.com/index.php?controller=authentication&back=my-account
+2021-28-09 21:09:14   INFO [WebElements:32  ] : 43gdsfgfd234@gmail.com was inputted
+2021-28-09 21:09:14   INFO [WebElements:47  ] : Element was clicked [[ChromeDriver: chrome on WINDOWS (7a2c39f2da34e90dd8ca0b4739ea1a90)] -> id: SubmitCreate]
+2021-28-09 21:09:36   INFO [RegistrationTests:34  ] : Get chromeDriver
+2021-28-09 21:09:36   INFO [RegistrationTests:37  ] : browser was opened
+2021-28-09 21:09:47   INFO [  MainPage:31  ] : Page was opened http://automationpractice.com/
+2021-28-09 21:09:51   INFO [RegistrationPage:31  ] : Page was opened http://automationpractice.com/index.php?controller=authentication&back=my-account
+2021-28-09 21:09:51   INFO [WebElements:32  ] : 32sad4@gmail.com was inputted
+2021-28-09 21:09:52   INFO [WebElements:47  ] : Element was clicked [[ChromeDriver: chrome on WINDOWS (1b50e39e6c39e220434aa1306f66fd90)] -> id: SubmitCreate]
+2021-28-09 21:09:54   INFO [WebElements:32  ] : Dima was inputted
+2021-28-09 21:09:54   INFO [WebElements:32  ] : Hulak was inputted
+2021-28-09 21:09:55   INFO [WebElements:32  ] : 32sad4@gmail.com was inputted
+2021-28-09 21:09:55   INFO [WebElements:32  ] : qwerty123 was inputted
+2021-28-09 21:09:55   INFO [WebElements:32  ] : Dima was inputted
+2021-28-09 21:09:55   INFO [WebElements:32  ] : Hulak was inputted
+2021-28-09 21:09:55   INFO [WebElements:32  ] : street New York, 12 was inputted
+2021-28-09 21:09:55   INFO [WebElements:32  ] : New York was inputted
+2021-28-09 21:09:56   INFO [WebElements:32  ] : 12345 was inputted
+2021-28-09 21:09:56   INFO [WebElements:32  ] : 1234567890 was inputted
+2021-28-09 21:09:56   INFO [WebElements:32  ] : 32sad4@gmail.com was inputted
+2021-28-09 21:10:12   INFO [WebElements:47  ] : Element was clicked Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='submitAccount']'
