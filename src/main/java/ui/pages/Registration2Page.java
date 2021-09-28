@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class RegistrationPage extends MainPage {
+public class Registration2Page extends MainPage {
 
-    public RegistrationPage(WebDriver webDriver) {
+    public Registration2Page(WebDriver webDriver) {
         super(webDriver);
     }
 
@@ -64,18 +64,23 @@ public class RegistrationPage extends MainPage {
     @FindBy(xpath = "//button[@id='submitAccount']")
     public WebElement submitAccount;
 
+    @FindBy(xpath = "//div[@id='center_column']/h1")
+    public WebElement titleRegisteredAccount;
+
     /**
      * Method open SignIn page
      */
-    public void clickSignIn() {
+    public Registration2Page clickSignIn() {
         signInLink.click();
+        return this;
     }
 
     /**
      * Method click to SignIn page
      */
-    public void openSignInPage() {
+    public Registration2Page openSignInPage() {
         openUrl("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+        return this;
     }
 
     /**
@@ -83,64 +88,79 @@ public class RegistrationPage extends MainPage {
      *
      * @param email
      */
-    public void inputEmailCreate(String email) {
+    public Registration2Page inputEmailCreate(String email) {
         webElements.inputText(loginInput, email);
+        return this;
     }
 
-    public void submitButtonCreate() {
+    public Registration2Page submitButtonCreate() {
         webElements.clickOnElement(submitButtonCreate);
+        return this;
     }
 
-    public void inputCustomerFN(String firstName) {
+    public Registration2Page inputCustomerFN(String firstName) {
         webElements.inputText(customerFistName, firstName);
+        return this;
     }
 
-    public void inputCustomerLN(String lastName) {
+    public Registration2Page inputCustomerLN(String lastName) {
         webElements.inputText(customerLastName, lastName);
+        return this;
     }
 
-    public void inputEmail(String email) {
+    public Registration2Page inputEmail(String email) {
         webElements.inputText(emailInput, email);
+        return this;
     }
 
-    public void inputPassword(String password) {
+    public Registration2Page inputPassword(String password) {
         webElements.inputText(passwordInput, password);
+        return this;
     }
 
-    public void inputFirstName(String firstName) {
+    public Registration2Page inputFirstName(String firstName) {
         webElements.inputText(firstNameInput, firstName);
+        return this;
     }
 
-    public void inputLastName(String lastName) {
+    public Registration2Page inputLastName(String lastName) {
         webElements.inputText(lastNameInput, lastName);
+        return this;
     }
 
-    public void inputStreet(String street) {
+    public Registration2Page inputStreet(String street) {
         webElements.inputText(streetInput, street);
+        return this;
     }
 
-    public void inputCity(String city) {
+    public Registration2Page inputCity(String city) {
         webElements.inputText(cityInput, city);
+        return this;
     }
 
-    public void selectState(int index) {
+    public Registration2Page selectState(int index) {
         Select select = new Select(webDriver.findElement(By.xpath("//select[@id='id_state']")));
         select.selectByIndex(index);
+        return this;
     }
 
-    public void inputPostCode(String postCode) {
+    public Registration2Page inputPostCode(String postCode) {
         webElements.inputText(postCodeInput, postCode);
+        return this;
     }
 
-    public void inputMobilePhone(String phone) {
+    public Registration2Page inputMobilePhone(String phone) {
         webElements.inputText(phoneMobileInput, phone);
+        return this;
     }
 
-    public void inputAlias(String alias) {
+    public Registration2Page inputAlias(String alias) {
         webElements.inputText(aliasInput, alias);
+        return this;
     }
 
-    public void clickSubmitAccount() {
+    public Registration2Page clickSubmitAccount() {
         webElements.clickOnElement(submitAccount);
+        return this;
     }
 }
