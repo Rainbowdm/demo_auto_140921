@@ -3,7 +3,7 @@ package suits;
 import org.junit.Test;
 import org.junit.experimental.ParallelComputer;
 import org.junit.runner.JUnitCore;
-import ui.registrationTests.RegistrationTests;
+import ui.registrationTests.RegistrationTest;
 
 public class ParallelTests {
 
@@ -11,7 +11,7 @@ public class ParallelTests {
     public void runAllBrowserTests() {
         Class<?>[] classes =
                 {
-                        RegistrationTests.class
+                        RegistrationTest.class
                 };
         // ParallelComputer(true, true) will run all classes and methods
         // in parallel. (First arg for classes, second arg for methods)
