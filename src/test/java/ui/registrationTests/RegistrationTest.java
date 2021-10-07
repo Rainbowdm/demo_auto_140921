@@ -2,9 +2,9 @@ package ui.registrationTests;
 
 import baseTest.BaseTest;
 import dataProviders.RegistrationPageDataProvider;
+import io.qameta.allure.*;
 import model.Account;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class RegistrationTest extends BaseTest {
@@ -23,8 +23,6 @@ public class RegistrationTest extends BaseTest {
     private final String COUNTRY = "United States";
     private final String POST_CODE = "12345";
     private final String MOBILE_PHONE = "1234567890";
-
-    @AfterMethod
 
 //    @Test
 //    public void registrationTest() {
@@ -54,37 +52,45 @@ public class RegistrationTest extends BaseTest {
 //                myAccountPage.checkTitle());
 //        myAccountPage.checkTitle(myAccountPage.titleRegisteredAccount.isDisplayed(), true);
 //    }
+//
+//    @Test
+//    public void registrationTest2() {
+//        mainPage.openUrl("http://automationpractice.com/");
+//        signInPage
+//                .clickSignIn()
+//                .inputEmailCreate(EMAIL)
+//                .submitButtonCreate();
+//        registration2Page
+//                .selectGender(GENDER)
+//                .inputCustomerFN(FIRST_NAME)
+//                .inputCustomerLN(LAST_NAME)
+//                .inputEmail(EMAIL)
+//                .inputPassword(PASSWORD)
+//                .selectBirthday(DAY)
+//                .selectBirthMonth(MONTH)
+//                .selectBirthYear(YEAR)
+//                .inputFirstName(FIRST_NAME)
+//                .inputLastName(LAST_NAME)
+//                .inputStreet(STREET)
+//                .inputCity(CITY)
+//                .selectState(STATE)
+//                .selectCountry(COUNTRY)
+//                .inputPostCode(POST_CODE)
+//                .inputMobilePhone(MOBILE_PHONE)
+//                .inputAlias(EMAIL)
+//                .clickSubmitAccount();
+//        Assert.assertEquals("MY ACCOUNT",
+//                myAccountPage.checkTitle());
+//    }
 
-    @Test
-    public void registrationTest2() {
-        mainPage.openUrl("http://automationpractice.com/");
-        signInPage
-                .clickSignIn()
-                .inputEmailCreate(EMAIL)
-                .submitButtonCreate();
-        registration2Page
-                .selectGender(GENDER)
-                .inputCustomerFN(FIRST_NAME)
-                .inputCustomerLN(LAST_NAME)
-                .inputEmail(EMAIL)
-                .inputPassword(PASSWORD)
-                .selectBirthday(DAY)
-                .selectBirthMonth(MONTH)
-                .selectBirthYear(YEAR)
-                .inputFirstName(FIRST_NAME)
-                .inputLastName(LAST_NAME)
-                .inputStreet(STREET)
-                .inputCity(CITY)
-                .selectState(STATE)
-                .selectCountry(COUNTRY)
-                .inputPostCode(POST_CODE)
-                .inputMobilePhone(MOBILE_PHONE)
-                .inputAlias(EMAIL)
-                .clickSubmitAccount();
-        Assert.assertEquals("MY ACCOUNT",
-                myAccountPage.checkTitle());
-    }
-
+    @Epic(value = "Registration")
+    @Story(value = "User can registration for this test")
+    @Description(value = "Test registration new user account")
+    @Issue("GS-213")
+    @TmsLink(value = "TL-2134")
+    @Link(value = "link", url = "url")
+    @Owner(value = "Dima")
+    @Severity(value = SeverityLevel.CRITICAL)
     @Test(dataProvider = "registrationNewUser", dataProviderClass = RegistrationPageDataProvider.class)
     public void testCreateNewAccount(Account userAccount) {
         mainPage.openUrl("http://automationpractice.com/");

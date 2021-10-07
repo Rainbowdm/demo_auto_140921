@@ -5,8 +5,6 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.RegisterExtension;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import java.time.Duration;
-
 import static com.google.common.math.LongMath.isPrime;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -39,16 +37,16 @@ public class Junit5Tests {
     @Test
     public void test() {
         System.out.println("test");
-        Assertions.assertTimeout(Duration.ofMillis(1), () -> Thread.sleep(10));
+//        Assertions.assertTimeout(Duration.ofMillis(1), () -> Thread.sleep(10));
     }
 
     @Test
     @ValueSource(strings = {"1", "2"})
     public void test2() {
         System.out.println("test2");
-        Assertions.assertAll(
-                () -> assertTrue(isPrime(2)),
-                () -> assertFalse(isPrime(4))
-        );
+//        Assertions.assertAll(
+//                () -> assertTrue(isPrime(2)),
+//                () -> assertFalse(isPrime(4))
+//        );
     }
 }
