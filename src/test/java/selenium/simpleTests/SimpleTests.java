@@ -1,4 +1,4 @@
-package simpleTests;
+package selenium.simpleTests;
 
 import org.apache.log4j.Logger;
 import org.junit.After;
