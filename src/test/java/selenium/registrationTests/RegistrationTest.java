@@ -1,6 +1,6 @@
-package ui.registrationTests;
+package selenium.registrationTests;
 
-import baseTest.BaseTest;
+import selenium.BaseTest;
 import dataProviders.RegistrationPageDataProvider;
 import io.qameta.allure.*;
 import model.Account;
