@@ -446,3 +446,16 @@
 2021-07-10 20:55:21   INFO [WebElements:30  ] : 1234567890 was inputted
 2021-07-10 20:55:21   INFO [WebElements:30  ] : Hello! was inputted
 2021-07-10 20:55:33   INFO [WebElements:45  ] : Element was clicked Proxy element for: DefaultElementLocator 'By.xpath: //button[@id='submitAccount']'
+2021-19-10 19:44:37   INFO [SwapDevTests:27  ] : 
+Luke Skywalker
+https://swapi.dev/api/planets/1/
+2021-19-10 19:53:40   INFO [SwapDevTests:44  ] : 
+Tatooine
+200000
+https://swapi.dev/api/films/1/
+https://swapi.dev/api/people/2/
+2021-19-10 19:54:38   INFO [SwapDevTests:45  ] : 
+Tatooine
+200000
+https://swapi.dev/api/films/1/
+https://swapi.dev/api/people/1/
