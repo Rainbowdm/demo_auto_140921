@@ -6,7 +6,7 @@
     <test name="ChromeTest" verbose="1" parallel="true">
         <parameter name="browserName" value="chrome">
             <classes>
-                <class name="selenideTests.RegistrationTest"/>
+                <class name="selenium.registrationTests.RegistrationTest"/>
             </classes>
         </parameter>
     </test>
