@@ -51,7 +51,7 @@ public class BaseTest {
         final String RUN_TYPE = "local";
         switch (RUN_TYPE) {
             case ("local"):
-                WebDriverManager.chromedriver().browserVersion("92").setup();
+                WebDriverManager.chromedriver().browserVersion("94").setup();
                 Configuration.browser = "chrome";
                 Configuration.timeout = 10000;
                 Configuration.baseUrl = "http://automationpractice.com";
